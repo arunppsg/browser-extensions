@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Beastify",
+    "version": "1.0",
+
+    "description": "Loads an animals image",
+    "homepage_url": "https://www.github.com/arunppsg/browser-extensions",
+    "icons": {
+        "32": "icons/beast-32.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/beast-32.png",
+        "default_title": "Beastify",
+        "default_popup": "popup/choose_beast.html"
+    },
+
+    "web_accessible_resources": [
+        "beasts/frog.jpg",
+        "beasts/turtle.jpg",
+        "beasts/snake.jpg"
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {"id": "beastify@example.com"}
+    }
+
+}
