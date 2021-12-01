@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "http-response-logger",
+    "version": "1.0",
+
+    "description": "Logs HTTP response to a system file",
+    "homepage_url": "https://www.github.com/arunppsg/browser-extensions",
+    "icons": {
+        "48": "icons/circle.svg"
+    },
+
+    "browser_action": {
+        "default_icon": "icons/circle.svg",
+        "default_title": "Exported"
+    },
+
+    "permissions": [
+        "webRequest", "webRequestBlocking", "tabs", "<all_urls>"
+    ],
+
+    "background": { 
+            "scripts": ["process.js"]
+    }
+}
